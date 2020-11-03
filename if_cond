@@ -3,7 +3,7 @@
 parameter1=$1
 parameter2=$2
 function srini_if() {
-if [[ $parameter1 == srini ]]
+if [[ $parameter1 == srini_1 ]]
 then
 	echo srini blog got hit
 elif [[ $parameter1 == vani ]]
