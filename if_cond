@@ -1,0 +1,25 @@
+#!/bin/bash
+# these are command line arguments (positional parameter arguments)
+parameter1=$1
+parameter2=$2
+function srini_if() {
+if [[ $parameter1 == srini ]]
+then
+	echo srini blog got hit
+elif [[ $parameter1 == vani ]]
+then
+	echo vani blog got hit
+else
+	echo srini or vani are not the inputs
+fi }
+
+##### switch case ############
+function srini_switch() {
+case $parameter1 in
+	srini)echo srini block got hit from switchcase;;
+	vani)echo vani block got hit from switchcase;;
+	*)echo this is the default switch case;;
+esac }
+[ $parameter2 -eq 1 ] && srini_if || srini_switch
+#srini_if
+#srini_switch
